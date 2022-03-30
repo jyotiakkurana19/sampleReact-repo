@@ -3,6 +3,7 @@ import React,{useState} from "react";
 import { View,Text, Button, Linking, StyleSheet} from "react-native"
 
 const HookTry = () => {
+   
    const [name,setName] = useState('alia')
    const [sessin, setSession] = useState({number: 6,title: 'state'})
     const onClickMethod = () => {

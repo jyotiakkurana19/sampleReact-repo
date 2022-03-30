@@ -6,6 +6,7 @@ import {
   } from 'react-native';
 import ButtonTry from './Trial/ButtonTry';
 import HookTry from './Trial/HookTry';
+import ListScroolViewRefreshControl from './Trial/ListScrollRefreshControl';
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <StatusBar style="auto" />
       <ButtonTry />
       <HookTry />
+      <ListScroolViewRefreshControl />
     </View>
   );
 }

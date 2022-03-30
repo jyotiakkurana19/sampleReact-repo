@@ -1,0 +1,33 @@
+From b73b06cda50cfe8cd76ea02803a2a52e9e4ad754 Mon Sep 17 00:00:00 2001
+From: Nitesh Narayan lal <niteshnarayanlal@Niteshs-MacBook-Air.local>
+Date: Mon, 28 Mar 2022 17:16:26 -0400
+Subject: [PATCH 1/2] added iindex.html file
+
+---
+ README.md  | 1 +
+ index.html | 3 +++
+ 2 files changed, 4 insertions(+)
+ create mode 100644 index.html
+
+diff --git a/README.md b/README.md
+index a102ccb..b3fd4d0 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # lets create readme in git
+ do change
++# wring in visual studio not in git
+\ No newline at end of file
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..42eb8c5
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,3 @@
++<div>
++    
++</div>
+\ No newline at end of file
+-- 
+2.30.1 (Apple Git-130)
+
