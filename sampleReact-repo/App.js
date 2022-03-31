@@ -1,21 +1,44 @@
 import { StatusBar } from 'expo-status-bar';
-import { 
+import {
+  Alert,
   StyleSheet,
   Text,
-  View 
-  } from 'react-native';
+  View
+} from 'react-native';
 import ButtonTry from './Trial/ButtonTry';
 import HookTry from './Trial/HookTry';
 import ListScroolViewRefreshControl from './Trial/ListScrollRefreshControl';
-
+import ProopsPractice from './Trial/PropsPractice';
+/// indentation shift+option+F
 
 export default function App() {
+
+  const onPressHandler = () =>
+    Alert.alert(
+      "Alert Title",
+      "My Alert Msg",
+      [
+        {
+          text: "Cancel",
+          onPress: () => console.log("Cancel Pressed"),
+          style: "cancel"
+        },
+        { text: "OK", onPress: () => console.log("OK Pressed") }
+      ]
+    );
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <ButtonTry />
+      {/* <ButtonTry />
       <HookTry />
-      <ListScroolViewRefreshControl />
+      <ListScroolViewRefreshControl /> */}
+
+      <ProopsPractice
+        onPressFunction={onPressHandler}
+        title='Press Me'
+        style={{ margin: 10 }}
+      />
     </View>
   );
 }
