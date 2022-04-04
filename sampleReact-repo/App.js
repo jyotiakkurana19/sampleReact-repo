@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import {
   Alert,
@@ -8,11 +9,13 @@ import {
 import ButtonTry from './Trial/ButtonTry';
 import HookTry from './Trial/HookTry';
 import ListScroolViewRefreshControl from './Trial/ListScrollRefreshControl';
+import NavigationTry from './Trial/NavigationPages/NavigationPractice';
 import ProopsPractice from './Trial/PropsPractice';
+
 /// indentation shift+option+F
 
 export default function App() {
-
+ 
   const onPressHandler = () =>
     Alert.alert(
       "Alert Title",
@@ -28,18 +31,20 @@ export default function App() {
     );
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      {/* <ButtonTry />
-      <HookTry />
-      <ListScroolViewRefreshControl /> */}
+  //  <View style={styles.container}>
+  //     <StatusBar style="auto" />
+  //     <ButtonTry />
+  //      <HookTry />
+  //      <ListScroolViewRefreshControl /> 
+  //      <ProopsPractice
+  //        onPressFunction={onPressHandler}
+  //        title='Press Me'
+  //        style={{ margin: 10 }}
+  //      />  
+  //      </View>
 
-      <ProopsPractice
-        onPressFunction={onPressHandler}
-        title='Press Me'
-        style={{ margin: 10 }}
-      />
-    </View>
+        <NavigationTry />
+     
   );
 }
 
